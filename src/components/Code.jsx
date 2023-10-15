@@ -2,14 +2,12 @@ import { useContext } from 'react';
 
 //components
 import Editor from './Editor';
-
 import { Box, styled } from '@mui/material';
-
 import { DataContext } from '../context/DataProvider';
 
 const Container = styled(Box)`
-    background-color: #060606;  //purple
-    height: 50vh;
+    background-color: #060606;
+    height: 48vh;
     display: flex;
 `
 
@@ -33,7 +31,7 @@ const Code = () => {
                 value={css}
                 onChange={setCss}
                 icon='*'
-                color='sky-bluefile'
+                color='skyblue'
             />
             <Editor 
                 language="javascript"

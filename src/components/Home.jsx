@@ -1,5 +1,3 @@
-
-
 //components
 import Code from './Code';
 import Result from './Result';

@@ -25,7 +25,7 @@ const Result = () => {
     useEffect(() => {
         const timeout = setTimeout(() => {
             setSrc(srcCode);
-        }, 250);
+        }, 2000);
 
         return () => clearTimeout(timeout);
     }, [html, css, js])

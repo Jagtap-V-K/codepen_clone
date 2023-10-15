@@ -14,9 +14,9 @@ import { CloseFullscreen } from '@mui/icons-material';
 import '../App.css';
 
 const Container = styled(Box)`
+    display: flex;
     flex-grow: 1;
     flex-basic: 0;
-    display: flex;
     flex-direction: column;
     padding: 0 2px 2px;
 `
@@ -24,14 +24,15 @@ const Container = styled(Box)`
 const Header = styled(Box)`
     display: flex;
     justify-content: space-between;
-    background: #060606;    //purple
-    color: #9ACD32;         //YELLOW-GREEN
-    font-weight: 700;
+    background: grey;
+    color: white;
+    font-weight: 400;
 `
 const Heading = styled(Box)`
-    background: #1d1e22;    //yellow
-    padding: 9px 12px;
-    display: flex
+    border-radius: 10px;
+    background: grey;
+    padding: 10px 10px;
+    display: flex;
 `
 
 const Editor = ({ heading, language, value, onChange, icon, color }) => {
